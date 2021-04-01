@@ -21,6 +21,24 @@
 width: 140px !important;
 
 }
+    
+body{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background: linear-gradient(-90deg, #cddfe9 0%, #7d99a4 100%)!important;
+}
+.cal{
+  box-shadow: 0.5px 0.5px 10px #1c34499e;
+}
+.headercss{
+  background: linear-gradient(to left, #1e76ad 0%, #1695a0 100%)!important;
+  color: white;
+  
+  margin-left:-0.2ch;
+  margin-right:-0.2ch;
+  padding-top: 10%;
+}
 
 </style>
 <body>
@@ -31,15 +49,22 @@ width: 140px !important;
 <hr>
 
 <div class="row shadow-lg">
-<aside class="col-6 shadow-lg ">
+<aside class="col-6  ">
                   
 
 
-                  <div class="card shadow-lg ">
+                  <div class="card cal">
                       <article class="card-group-item shadow-lg">
                           <header class="card-header">
-                              <h6 class="title">Service </h6>
+                              <h6 class="title">SPECTRUM  </h6>
                           </header>
+                          <div class="   headercss   ">
+                          <h6 class="   mb-4">CALCULATOR </h6>
+                          </div>
+                          
+                         
+
+                          
                           <div class="filter-content">
                         
                               <div class="card-body">
@@ -155,7 +180,7 @@ width: 140px !important;
                                   </div>
                               </div> <!-- card-body.// -->
                           </div>
-                          <button id='submit' class="btn btn-success btn-block" style="width: 535px !important;height:50px " >Total </button>
+                          <button id='submit' class="btn btn-success btn-block" style="width: 540px  !important;height:50px " >Total </button>
                       </article> <!-- card-group-item.// -->
                   </div> <!-- card.// -->
 
@@ -163,17 +188,52 @@ width: 140px !important;
 
 
 </aside> <!-- col.// -->
+<div class="col-sm-6 border m-0 p-0 card cal">
+        
+            <div ><center><h1 class="bg-light m-0 p-0  ">RESULT</h1></center></div>
 
-<div class="col-6 shadow">
-<center><h1>Spectrum</h1></center><br><br><br>
+            <center><h1 id='providerName' style="height:3.4ch" class="headercss m-0 p-0 " >TV</h1></center>
 
-<h3 style="width: 900px !important;"> <span class="justify-content-center" >Promotion Price</span>   $<span class="border-bottom" id="Pricing">0.00</span></h3>
 
-<h3>Broadcast Fee  &nbsp;&nbsp;&nbsp;&nbsp;$<span class="border-bottom" id="broadcastView">0.00</span></h3>
+            <table class="table w-50 borderless"  >
+              <thead>
+                <tr>
+                  <td scope="col" >Wifi</th>
+                  <td scope="col" style="float:right"  id="wifiid">0.00</th>
+                </tr>
+                <tr>
+                  <td scope="col" >Silver|Gold </th>
+                  <td scope="col" style="float:right"  id="upgradeid">0.00 </th>
+                </tr>
+                <tr>
+                  <td scope="col" >TVs price</th>
+                  <td scope="col" style="float:right" id="tvsid">0.00 </th>
+                </tr>
+                <tr>
+                <tr>
+                  <td scope="col" >Dvr </th>
+                  <td scope="col" style="float:right" id="Bundleid">0.00 </th>
+                </tr>
+                <tr>
+                  <td scope="col" >Price  </th>
+                  <td  scope="col" style="float:right"  id="priceid">0.00</th>
+                </tr>
+                <tr>
+                <tr>
+                <td  scope="col" >Broadcast Fee </th>
+                <td  scope="col" style="float:right"  id="broadcastid">0.00</th>
+                </tr>
+                <tr>
+                  <th scope="col" >Total</th>
+                  <th scope="col" style="float:right"  id="totalid">0.00</th>
+                </tr>
+            
+              </thead>
+              <tbody>
+                <tr>
 
-<h3>Monthly Bill   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span class="border-bottom" id="monthly">0.00</span></h3>
 
-</div>
+      </div>
 
 
 
@@ -283,6 +343,10 @@ $(document).ready(function(){
 
                  
             }
+            if($('#phone').prop("checked")== true){
+              document.getElementById("price").value = "12.99";   
+            }
+            
             else if($('#tv').prop("checked")== false || $('#tvlatino').prop("checked")== false){
                 console.log("Checkbox is unchecked.tv");
                        $("#wifi").prop('disabled', false)
@@ -370,7 +434,7 @@ $(document).ready(function(){
                        $("#silver").prop('disabled',false);
                        $("#tvs").prop('disabled', false);
                        $("#dvr").prop('disabled', false);
-                       document.getElementById("price").value = "87.97";
+                       document.getElementById("price").value = "102.97";
                        document.getElementById("broadcast").value = "16.45"; 
                 } 
                 // tvlatino , phone and internet
@@ -475,14 +539,25 @@ $(document).ready(function(){
                   sum=wifi+upgrade+tvsTotal+dvrTotal+price;
                   console.log(price);
                   console.log('sum='+sum);
-                  document.getElementById("Pricing").innerHTML=sum;
+                  // document.getElementById("Pricing").innerHTML=sum;
                  
-                  document.getElementById("broadcastView").innerHTML=broadcast;
+                  // document.getElementById("broadcastView").innerHTML=broadcast;
                  
                   broadcast=parseFloat(broadcast);
                   monthly=sum+broadcast;
                   console.log(monthly);
-                  document.getElementById("monthly").innerHTML=monthly;
+                  // document.getElementById("monthly").innerHTML=monthly;
+
+
+
+                  document.getElementById("wifiid").innerHTML=wifi;
+                  document.getElementById("upgradeid").innerHTML=upgrade;
+                  document.getElementById("tvsid").innerHTML=tvsTotal;
+                  document.getElementById("Bundleid").innerHTML=dvrTotal;
+                  document.getElementById("priceid").innerHTML=sum;
+                  document.getElementById("broadcastid").innerHTML=broadcast;
+                  document.getElementById("totalid").innerHTML=monthly;
+
 
                })
 
