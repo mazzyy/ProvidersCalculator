@@ -74,7 +74,7 @@ body{
     <div class="card">
     <article class="card-group-item" >
         <header class="card-header headercss" >
-            <h6 class="title">TV </h6>
+            <h6 class="title">Direct TV </h6>
         </header>
         <div class="filter-content">
             <div class="card-body">
@@ -139,7 +139,7 @@ body{
                     Century Link Bundle
                   </span>
                 </label>
-<button type="button" class="btn btn-block btn-success btn-lg" id="btnDtv" >Success</button>
+<button type="button" class="btn btn-block btn-success btn-lg" id="btnDtv" >Total</button>
             </form>
 
             </div> <!-- card-body.// -->
@@ -224,7 +224,7 @@ body{
                     Century Link Bundle
                   </span>
                 </label>
-<button type="button" class="btn btn-block btn-success btn-lg" id="btnAtv">Success</button>
+<button type="button" class="btn btn-block btn-success btn-lg" id="btnAtv">Total</button>
             </form>
 
             </div> <!-- card-body.// -->
@@ -247,7 +247,7 @@ body{
         
             <div ><center><h1 class="bg-light m-0 p-0  ">CALCULATOR</h1></center></div>
 
-            <center><h1 id='providerName' style="height:3.4ch" class="headercss m-0 p-0 " >TV</h1></center><br><br><br>
+            <center><h1 id="providername" style="height:3.4ch" class="headercss m-0 p-0 " >TV</h1></center><br><br><br>
 
 
             <table class="table w-50 borderless"  >
@@ -318,6 +318,8 @@ $(document).ready(function(){
          }
          else if(tvsDtv==1){
           tvsDtv=0;
+         }else if(isNaN(tvsDtv) || tvsDtv == null || tvsDtv == ""){
+          tvsDtv=0;
          }
      
     
@@ -348,6 +350,11 @@ $(document).ready(function(){
           // document.getElementById("monthly").innerHTML=bill;
           // document.getElementById("providerName").innerHTML='SPECTRUM';
 
+           packageDtv = packageDtv.toFixed(2);
+           tvsDtv = tvsDtv.toFixed(2);
+           payDtv = payDtv.toFixed(2);
+           bundle = bundle.toFixed(2);
+           sum = sum.toFixed(2);
 
           
           document.getElementById("Package").innerHTML=packageDtv;
@@ -356,9 +363,9 @@ $(document).ready(function(){
           document.getElementById("Bundle").innerHTML=bundle;
 
           document.getElementById("monthly").innerHTML=sum;
-          document.getElementById("totalbill").innerHTML=bill;
+          // document.getElementById("totalbill").innerHTML=sum;
 
-          document.getElementById("providerName").innerHTML='Spectrum';
+          document.getElementById("providername").innerHTML='Spectrum';
  
 
         })
@@ -384,7 +391,7 @@ $(document).ready(function(){
          else if(tvsatv==1){
           tvsatv=0;
          }
-         else if(tvsatv){
+         else if(isNaN(tvsatv) || tvsatv == null || tvsatv == ""){
           tvsatv=0;
          }
      
@@ -414,17 +421,20 @@ $(document).ready(function(){
           console.log('bill='+bill);
           console.log('sum='+sum);
 
-
-          
+           packageatv = packageatv.toFixed(2);
+           tvsatv = tvsatv.toFixed(2);
+           payatv = payatv.toFixed(2);
+           bundle = bundle.toFixed(2);
+           sum = sum.toFixed(2);
           
           document.getElementById("Package").innerHTML=packageatv;
           document.getElementById("tvsprice").innerHTML=tvsatv;
           document.getElementById("autopay").innerHTML=payatv;
           document.getElementById("Bundle").innerHTML=bundle;
 
-          // document.getElementById("monthly").innerHTML=sum;
-          document.getElementById("totalbill").innerHTML=bill;
-          document.getElementById("providerName").innerHTML='AT&T';
+          document.getElementById("monthly").innerHTML=sum;
+          // document.getElementById("totalbill").innerHTML=bill;
+          document.getElementById("providername").innerHTML='AT&T';
         
 
         })

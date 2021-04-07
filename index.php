@@ -45,7 +45,7 @@ body{
 
 
 <div class="container">
-<br>  <p class="text-center">SPECTRUM CALCULATOR</p>
+<br>  <p class="text-center"></p>
 <hr>
 
 <div class="row shadow-lg">
@@ -58,9 +58,9 @@ body{
                           <header class="card-header">
                               <h6 class="title">SPECTRUM  </h6>
                           </header>
-                          <div class="   headercss   ">
-                          <h6 class="   mb-4">CALCULATOR </h6>
-                          </div>
+                          <header class="card-header headercss">
+            <h6 class="title">Calculator </h6>
+        </header>
                           
                          
 
@@ -192,7 +192,7 @@ body{
         
             <div ><center><h1 class="bg-light m-0 p-0  ">RESULT</h1></center></div>
 
-            <center><h1 id='providerName' style="height:3.4ch" class="headercss m-0 p-0 " >TV</h1></center>
+            <center><h1 id='providerName' style="height:4.4ch" class="headercss m-0 p-0 " >TV</h1></center>
 
 
             <table class="table w-50 borderless"  >
@@ -502,6 +502,7 @@ $(document).ready(function(){
                   var wifi=0;
                   var tvsTotal=0;
                  var dvrTotal=0;
+                 
                   if($('#silver').prop("checked") == true)
                   {
                     upgrade=30;
@@ -548,6 +549,12 @@ $(document).ready(function(){
                   console.log(monthly);
                   // document.getElementById("monthly").innerHTML=monthly;
 
+                  var wifi = wifi.toFixed(2);
+                  var upgrade = upgrade.toFixed(2);
+                  var tvsTotal = tvsTotal.toFixed(2);
+                  var dvrTotal = dvrTotal.toFixed(2);
+                  var sum = sum.toFixed(2);
+                  var monthly = monthly.toFixed(2);
 
 
                   document.getElementById("wifiid").innerHTML=wifi;
