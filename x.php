@@ -49,7 +49,7 @@ body{
 <hr>
 
 <div class="row shadow-lg">
-<aside class="col-6">
+<aside class="col-7">
                   
 
                   
@@ -196,18 +196,18 @@ body{
 
 
 
-                                  <input type="text" id="phonehidden" value="0">
-                                  <input type="text" id="internethidden" value="0">
-                                  <input type="text" id="tvhidden" value="0">
-                                  <input type="text" id="packageshidden" value="0">
-                                  <input type="text" id="itphidden" value="0">
+                                  <input type="hidden" id="phonehidden" value="0">
+                                  <input type="hidden" id="internethidden" value="0">
+                                  <input type="hidden" id="tvhidden" value="0">
+                                  <input type="hidden" id="packageshidden" value="0">
+                                  <input type="hidden" id="itphidden" value="0">
                              
                                   <br >
 
                                     
     <label class="btn btn-info">
 
-                                    <input class="" type="checkbox" id="wifi"  value="">
+                                    <input class="" type="checkbox" id="wifi"  value="0">
                                     <span class="form-check-label" >&nbsp;WIFI</span>
                                   </label>
                                   </div>
@@ -215,7 +215,92 @@ body{
                                   </div>
                               </div> <!-- card-body.// -->
                           </div>
-                          <button id='submit' class="btn btn-success btn-block" style="width: 540px  !important;height:50px " >Total </button>
+                          <div class="row">
+                                                <div class="col-md-3 pb-1   ">
+                                                    <div class="custom-control custom-checkbox image-checkbox shadow-lg pb-1" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="LATINO"  value="17.95">
+                                                        <label class="custom-control-label" for="LATINO">
+                                                      <h5 class="m-0 p-0 border-bottom">LATINO </h5><p style="font-size: 10px; color:aliceblue" >17.95</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 pb-1">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="NETFLIX" value="10">
+                                                        <label class="custom-control-label" for="NETFLIX">
+                                                         <h5 class="m-0 p-0 border-bottom" >NETFLIX -</h5><p style="font-size: 10px; color:aliceblue" >10</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 pb-1">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="HBOMAX" value="14.99">
+                                                        <label class="custom-control-label" for="HBOMAX">
+                                                        <h5  class="m-0 p-0 border-bottom" >HBOMAX</h5><p style="font-size: 10px; color:aliceblue" >14.99</p>
+
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                             
+                                                <div class="col-md-3 pb-1">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="STARZ" value="8.99">
+                                                        <label class="custom-control-label" for="STARZ">
+                                                        <h5  class="m-0 p-0 border-bottom">STARZ </h5><p style="font-size: 10px; color:aliceblue" >8.99</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 pb-1">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="SHOWTIME" value="12.00">
+                                                        <label class="custom-control-label" for="SHOWTIME">
+                                                        <h5  class="m-0 p-0 border-bottom">SHOWTIME </h5><p style="font-size: 10px; color:aliceblue" >12.00</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 pb-1">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="REDZONE" value="9.95">
+                                                        <label class="custom-control-label" for="REDZONE">
+                                                         <h5  class="m-0 p-0 border-bottom">REDZONE </h5><p style="font-size: 10px; color:aliceblue" >9.95</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 pb-1">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="DEPORTES" value="5.00">
+                                                        <label class="custom-control-label" for="DEPORTES">
+                                                        <h5  class="m-0 p-0 border-bottom">DEPORTES</h5><p style="font-size: 10px; color:aliceblue" >5.00</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="col-md-3 pb-1">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="epex" value="5.99">
+                                                        <label class="custom-control-label" for="epex">
+                                                        <h5  class="m-0 p-0 border-bottom">EPEX</h5><p style="font-size: 10px; color:aliceblue" >5.99</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 pb-1">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="MOVIE"  value="12.00">
+                                                        <label class="custom-control-label" for="MOVIE">
+                                                         <h5  class="m-0 p-0 border-bottom">MOVIE</h5><p style="font-size: 10px; color:aliceblue" >12.00</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 pb-1" style="width: 30px;">
+                                                    <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
+                                                        <input type="checkbox" class="custom-control-input" id="STAREAMPIX"  value="4.99">
+                                                        <label class="custom-control-label" for="STAREAMPIX">
+                                                        <h5  class="m-0 p-0 border-bottom">STAREAMPIX  </h5><p style="font-size: 10px; color:aliceblue" >4.99</p>
+                                                        </label>
+                                                    </div>
+                                                </div> 
+                                    </div>
+                          <button id='submit' class="btn btn-success btn-block" style="width: 100%  !important;height:50px " >Total </button>
                       </article> <!-- card-group-item.// -->
                   </div> <!-- card.// -->
 
@@ -223,7 +308,7 @@ body{
 
 
 </aside> <!-- col.// -->
-<div class="col-sm-6 border m-0 p-0 card cal">
+<div class="col-sm-5 border m-0 p-0 card cal">
         
             <div ><center><h1 class="bg-light m-0 p-0  ">RESULT</h1></center></div>
 
@@ -238,27 +323,31 @@ body{
                   <td scope="col" style="float:right"  id="wifiid">0.00</th>
                 </tr>
                 <tr>
-                  <td scope="col" >Silver|Gold </th>
-                  <td scope="col" style="float:right"  id="upgradeid">0.00 </th>
+                  <td scope="col" >Tv</th>
+                  <td scope="col" style="float:right"  id="tvid">0.00 </th>
                 </tr>
                 <tr>
-                  <td scope="col" >TVs price</th>
-                  <td scope="col" style="float:right" id="tvsid">0.00 </th>
+                  <td scope="col" >Phone</th>
+                  <td scope="col" style="float:right" id="phoneid">0.00 </th>
                 </tr>
                 <tr>
                 <tr>
-                  <td scope="col" >Dvr </th>
-                  <td scope="col" style="float:right" id="Bundleid">0.00 </th>
+                  <td scope="col" >Internet</th>
+                  <td scope="col" style="float:right" id="internetid">0.00 </th>
                 </tr>
                 <tr>
-                  <td scope="col" >Price  </th>
+                  <td scope="col" >Packages  </th>
                   <td  scope="col" style="float:right"  id="priceid">0.00</th>
                 </tr>
                 <tr>
                 <tr>
-                <td  scope="col" >Broadcast Fee </th>
-                <td  scope="col" style="float:right"  id="broadcastid">0.00</th>
+                <td  scope="col" >Tvs </th>
+                <td  scope="col" style="float:right"  id="tvsid">0.00</th>
                 </tr>
+                <td  scope="col" >Channles</th>
+                <td  scope="col" style="float:right"  id="channlesid">0.00</th>
+                </tr>
+                
                 <tr>
                   <th scope="col" >Total</th>
                   <th scope="col" style="float:right"  id="totalid">0.00</th>
@@ -295,7 +384,7 @@ body{
               // console.log('in.............................');
 
       // internet
-                      if($('#internet').prop("checked") == true ){
+                      if($('#internet').prop("checked") == true   ){
                           // alert('internet')
                           console.log('internet checked');
                           $("#internetDd").prop('disabled', false);
@@ -389,10 +478,13 @@ body{
                             $("#phoneDd").prop('disabled', false);
                             $("#internetDd").prop('disabled', false);
                       }
-                    
+                          
                       if($('#internet').prop("checked")== true  && $('#tv').prop("checked") == true){
                       console.log("internet + Tv");
-                      // alert("1");
+                      document.getElementById("extra").innerHTML='';
+                      document.getElementById("itphidden").value=0;
+                      $("#hs").show();
+             
                           $("#packagesDd").prop('disabled', false);
                            $("#tvDd").prop('disabled',true);
                            $("#phoneDd").prop('disabled', true);
@@ -400,7 +492,7 @@ body{
                       }
                       if($('#tv').prop("checked")== true  && $('#phone').prop("checked") == true  ){
                       console.log("phone + Tv");
-                      // alert("1");
+             
                           $("#packagesDd").prop('disabled', false);
                            $("#tvDd").prop('disabled',true);
                            $("#phoneDd").prop('disabled', true);
@@ -445,6 +537,9 @@ body{
                             
                             $("#packagesDd").change(function(){
                              var packages=document.getElementById("packagesDd").value;
+                             document.getElementById("extra").innerHTML='';
+                             document.getElementById("itphidden").value=0;
+                             $("#hs").show();
 
                             //  console.log(packages);
                              if(packages=='SUPER'){
@@ -510,12 +605,17 @@ body{
                       else{
                             $("#hs").show();
                             document.getElementById("extra").innerHTML='';
+                          
                       }
 
+
+                   
+       
+
                       
 
                       
-                      
+                     
                        
 
 
@@ -524,6 +624,7 @@ body{
                
                       // console.log("phonevalue"+phonevalue);
                        $( "#submit" ).on( "click", function() {
+                         
                         var tvsInput = $("#tvs"). val();
                         var wifi=0;
                         phvalue=document.getElementById("phonehidden").value;
@@ -537,9 +638,10 @@ body{
                         tvalue =parseFloat(tvalue);
                         pgvalue =parseFloat(pgvalue);
                         itpvalue =parseFloat(itpvalue);
+                        
                         if($('#wifi').prop("checked") == true)
                           {
-                            wifi=5;
+                            wifi=14;
                           }else{
                             wifi=0;
                           }
@@ -548,15 +650,47 @@ body{
                         // console.log('phvnetvaluealue'+netvalue)
                         // console.log('phvatvaluelue'+tvalue)
                         // console.log('pgvalue'+pgvalue)
+                        var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
+                          var channelsSum=0;
+                      for (var checkbox of markedCheckbox) {
 
-                        var tvsTotal= tvsInput*7;
+                                value =parseFloat(checkbox.value);
+                                console.log('tv channels='+ value);
+                                channelsSum= channelsSum+value;  
+                      
+                      }
+                      console.log('channelsSum='+ channelsSum);
 
-                        total=phvalue+netvalue+tvalue+pgvalue+tvsTotal+itpvalue+wifi;
+                     
+
+                        var tvsTotal= tvsInput*7.50;
+
+                        total=phvalue+netvalue+tvalue+pgvalue+tvsTotal+itpvalue+wifi+channelsSum;
                         total = total.toFixed(2);
+                        channelsSum = channelsSum.toFixed(2);
                         console.log('total='+total);     
+                  document.getElementById("channlesid").innerHTML=channelsSum;
+                  document.getElementById("wifiid").innerHTML=wifi;
+                  document.getElementById("tvid").innerHTML=tvalue;
+                  document.getElementById("phoneid").innerHTML=phvalue;
+                  document.getElementById("internetid").innerHTML=netvalue;
+                  if(pgvalue>0){
+                    document.getElementById("priceid").innerHTML=pgvalue;
+                  }
+                  else if(itpvalue>0){
+                    document.getElementById("priceid").innerHTML=itpvalue;
+
+                  }else{
+                    document.getElementById("priceid").innerHTML=0;
+
+                  }              
+                  document.getElementById("tvsid").innerHTML=tvsTotal;
+                  document.getElementById("totalid").innerHTML=total;
 
 
                        });
+
+
                      
                   
         });
