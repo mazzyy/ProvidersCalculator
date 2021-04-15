@@ -39,6 +39,16 @@ body{
   margin-right:-0.2ch;
   padding-top: 10%;
 }
+.custom-control{
+  box-shadow: 0.5px 0.5px 4px #1c34499e;
+}
+.custom-control-input{
+padding: 100px !important;
+}
+.custom-checkbox{
+
+  background-image: ; 
+}
 
 </style>
 <body>
@@ -69,7 +79,7 @@ body{
                           
                           <div class="filter-content">
                         
-                              <div class="card-body">
+                              <div class="card-body ">
                               <form>
                 
 
@@ -175,7 +185,7 @@ body{
                           </header>
                           <div class="filter-content">
                               
-                              <div class="card-body">
+                              <div class="card-body border-bottom ">
                                   <div class="row">
                                   <div class="col-md-6">
                               <div class="form-group ">
@@ -188,7 +198,7 @@ body{
                             <div>
                    
                             </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 pt-2">
                       <div class="form-group">
                                
                               
@@ -215,12 +225,12 @@ body{
                                   </div>
                               </div> <!-- card-body.// -->
                           </div>
-                          <div class="row">
+                          <div class="row text-light ">
                                                 <div class="col-md-3 pb-1   ">
                                                     <div class="custom-control custom-checkbox image-checkbox shadow-lg pb-1" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="LATINO"  value="17.95">
                                                         <label class="custom-control-label" for="LATINO">
-                                                      <h5 class="m-0 p-0 border-bottom">LATINO </h5><p style="font-size: 10px; color:aliceblue" >17.95</p>
+                                                      <h5 class="m-0 p-0 border-bottom">LATINO </h5><p style="font-size: 13px; color:aliceblue" >17.95</p>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -228,7 +238,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="NETFLIX" value="10">
                                                         <label class="custom-control-label" for="NETFLIX">
-                                                         <h5 class="m-0 p-0 border-bottom" >NETFLIX -</h5><p style="font-size: 10px; color:aliceblue" >10</p>
+                                                         <h5 class="m-0 p-0 border-bottom" >NETFLIX -</h5><p style="font-size: 13px; color:aliceblue" >10</p>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -236,7 +246,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="HBOMAX" value="14.99">
                                                         <label class="custom-control-label" for="HBOMAX">
-                                                        <h5  class="m-0 p-0 border-bottom" >HBOMAX</h5><p style="font-size: 10px; color:aliceblue" >14.99</p>
+                                                        <h5  class="m-0 p-0 border-bottom" >HBOMAX</h5><p style="font-size: 13px; color:aliceblue" >14.99</p>
 
                                                         </label>
                                                     </div>
@@ -246,7 +256,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="STARZ" value="8.99">
                                                         <label class="custom-control-label" for="STARZ">
-                                                        <h5  class="m-0 p-0 border-bottom">STARZ </h5><p style="font-size: 10px; color:aliceblue" >8.99</p>
+                                                        <h5  class="m-0 p-0 border-bottom">STARZ </h5><p style="font-size: 13px; color:aliceblue" >8.99</p>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -254,7 +264,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="SHOWTIME" value="12.00">
                                                         <label class="custom-control-label" for="SHOWTIME">
-                                                        <h5  class="m-0 p-0 border-bottom">SHOWTIME </h5><p style="font-size: 10px; color:aliceblue" >12.00</p>
+                                                        <h5  class="m-0 p-0 border-bottom">SHOWTIME </h5><p style="font-size: 13px; color:aliceblue" >12.00</p>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -262,7 +272,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="REDZONE" value="9.95">
                                                         <label class="custom-control-label" for="REDZONE">
-                                                         <h5  class="m-0 p-0 border-bottom">REDZONE </h5><p style="font-size: 10px; color:aliceblue" >9.95</p>
+                                                         <h5  class="m-0 p-0 border-bottom">REDZONE </h5><p style="font-size: 13px; color:aliceblue" >9.95</p>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -270,7 +280,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="DEPORTES" value="5.00">
                                                         <label class="custom-control-label" for="DEPORTES">
-                                                        <h5  class="m-0 p-0 border-bottom">DEPORTES</h5><p style="font-size: 10px; color:aliceblue" >5.00</p>
+                                                        <h5  class="m-0 p-0 border-bottom">DEPORTES</h5><p style="font-size: 13px; color:aliceblue" >5.00</p>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -279,7 +289,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="epex" value="5.99">
                                                         <label class="custom-control-label" for="epex">
-                                                        <h5  class="m-0 p-0 border-bottom">EPEX</h5><p style="font-size: 10px; color:aliceblue" >5.99</p>
+                                                        <h5  class="m-0 p-0 border-bottom">EPEX</h5><p style="font-size: 13px; color:aliceblue" >5.99</p>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -287,7 +297,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="MOVIE"  value="12.00">
                                                         <label class="custom-control-label" for="MOVIE">
-                                                         <h5  class="m-0 p-0 border-bottom">MOVIE</h5><p style="font-size: 10px; color:aliceblue" >12.00</p>
+                                                         <h5  class="m-0 p-0 border-bottom">MOVIE</h5><p style="font-size: 13px; color:aliceblue" >12.00</p>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -295,7 +305,7 @@ body{
                                                     <div class="custom-control custom-checkbox image-checkbox" style="background-color:#1695a0 ">
                                                         <input type="checkbox" class="custom-control-input" id="STAREAMPIX"  value="4.99">
                                                         <label class="custom-control-label" for="STAREAMPIX">
-                                                        <h5  class="m-0 p-0 border-bottom">STAREAMPIX  </h5><p style="font-size: 10px; color:aliceblue" >4.99</p>
+                                                        <h5  class="m-0 p-0 border-bottom">STAREAMPIX  </h5><p style="font-size: 13px; color:aliceblue" >4.99</p>
                                                         </label>
                                                     </div>
                                                 </div> 
@@ -399,7 +409,7 @@ body{
                                 pd=$( "#internetDd" ).val();
                                 phonevalue=document.getElementById("phonehidden").value=0;
                                 internetvalue=document.getElementById("internethidden").value=pd;
-                                tvvalue=document.getElementById("tvhidden").value=0;
+                                tvvalue=document.getElementById("tvhidden").value=0; 
                                 packagesvalue=document.getElementById("packageshidden").value=0;
                                
                                 console.log( 'phonevalue '+phonevalue);

@@ -365,6 +365,9 @@ $(document).ready(function(){
                        $("#tvlatino").prop('disabled', true);
                        document.getElementById("price").value = "74..98";
                        document.getElementById("broadcast").value = "16.45"; 
+                }else if($('#tv').prop("checked")== false){
+                  $("#tvlatino").prop('disabled', false);
+
                 }else{
 
                   $("#wifi").prop('disabled', false);
@@ -387,8 +390,8 @@ $(document).ready(function(){
                        $("#tv").prop('disabled', true);
                        document.getElementById("price").value = "64.98";
                        document.getElementById("broadcast").value = "16.45"; 
-                } else{
-                  // $("#tv").prop('disabled', false);
+                } else if($('#tvlatino').prop("checked")== false){
+                  $("#tv").prop('disabled', false);
 
                 }
                       // interner and phone
